@@ -12,37 +12,37 @@ blueprint:
           manufacturer: IKEA
           model: "BILRESA remote control with buttons"
     action_on:
-      name: Button 1 (On)
+      name: Up Button - Single press
       default: []
       selector:
         action: {}
     action_off:
-      name: Button 0 (Off)
+      name: Down Button Single press
       default: []
       selector:
         action: {}
     action_on_double:
-      name: Button 1 (Double click)
+      name: Up Button - Double press
       default: []
       selector:
         action: {}
     action_off_double:
-      name: Button 0 (Double click)
+      name: Down Button - Double press
       default: []
       selector:
         action: {}
     action_up:
-      name: Button 1 (Hold/Step)
+      name: Up Button - Hold
       default: []
       selector:
         action: {}
     action_down:
-      name: Button 0 (Hold/Step)
+      name: Down Button - Hold/Step
       default: []
       selector:
         action: {}
     action_stop:
-      name: Stop (Release)
+      name: Release
       description: Action when releasing a button after being held.
       default: []
       selector:
