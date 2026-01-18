@@ -8,7 +8,6 @@ They exist because I needed specific behavior that wasn’t available out of the
 
 The blueprints in this repo are mainly:
 - Automation blueprints
-- Focused on Zigbee / Zigbee2MQTT devices
 - Designed around my real use in my own Home Assistant instance
 
 They may assume:
@@ -23,7 +22,7 @@ You’re free to use, modify, or adapt these blueprints.
 Before using them:
 - Read the description inside the blueprint
 - Adjust entities and settings to match your setup
-- Test carefully, since they are not guaranteed to cover every edge case
+- Test carefully, I can't guarantee they'll cover every edge case
 
 ## Notes
 
