@@ -3,7 +3,7 @@ blueprint:
     min_version: 2024.10.0
   author: damru & hkfuertes
   domain: automation
-  name: "[Z2M] Ikea's Rodret, Somrig or Tradfri - Light control"
+  name: "[Z2M] IKEA Rodret Remote - Light Control"
   description: Control lights with IKEA RODRET, SOMRIG, or TRADFRI remotes via Zigbee2MQTT. Press on/1 dot to turn on (optional brightness), off/2 dots to turn off; hold on/1 dot to increase brightness, off/2 dots to decrease to 1%.
   input:
     remote_devices:
