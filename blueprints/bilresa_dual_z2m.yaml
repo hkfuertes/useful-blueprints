@@ -2,9 +2,9 @@ blueprint:
   name: "[Z2M] IKEA Bilresa Remote"
   description: Automation made for IKEA Bilresa (E2489) based on Zigbee2MQTT actions.
   domain: automation
-  author: Matei Asan & hkfuertes
+  author: Matei Asan
   input:
-    remote_devices:
+    remote_device:
       name: Bilresa Remotes
       description: Select your Bilresa 2-button remotes from Zigbee2MQTT.
       default: []
@@ -13,7 +13,6 @@ blueprint:
           integration: mqtt
           manufacturer: IKEA
           model: "BILRESA remote control with buttons"
-          multiple: true
     action_on:
       name: Up Button - Single press
       default: []
@@ -57,43 +56,43 @@ max_exceeded: silent
 trigger:
   - platform: device
     domain: mqtt
-    device_id: !input remote_devices
+    device_id: !input remote_device
     type: action
     subtype: "on"
     id: "on"
   - platform: device
     domain: mqtt
-    device_id: !input remote_devices
+    device_id: !input remote_device
     type: action
     subtype: "off"
     id: "off"
   - platform: device
     domain: mqtt
-    device_id: !input remote_devices
+    device_id: !input remote_device
     type: action
     subtype: "on_double"
     id: "on_double"
   - platform: device
     domain: mqtt
-    device_id: !input remote_devices
+    device_id: !input remote_device
     type: action
     subtype: "off_double"
     id: "off_double"
   - platform: device
     domain: mqtt
-    device_id: !input remote_devices
+    device_id: !input remote_device
     type: action
     subtype: "brightness_move_up"
     id: "up"
   - platform: device
     domain: mqtt
-    device_id: !input remote_devices
+    device_id: !input remote_device
     type: action
     subtype: "brightness_move_down"
     id: "down"
   - platform: device
     domain: mqtt
-    device_id: !input remote_devices
+    device_id: !input remote_device
     type: action
     subtype: "brightness_stop"
     id: "stop"
