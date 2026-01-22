@@ -6,10 +6,10 @@ blueprint:
   name: "[Z2M] IKEA Dual Button Remote - Light Control"
   description: |
     Control lights with IKEA RODRET, SOMRIG, TRADFRI or BILRESA remotes via Zigbee2MQTT: 
-    - Press on/1 dot to turn on (optional brightness)
-    - Press off/2 dots to turn off 
-    - Hold on/1 dot to increase brightness
-    - Hold off/2 dots to decrease to 1%.
+    - Press on/(1 dot) to turn on (optional brightness)
+    - Press off/(2 dots) to turn off 
+    - Hold on/(1 dot) to increase brightness
+    - Hold off/(2 dots) to decrease to 1%.
   input:
     remote_devices:
       name: Remotes
